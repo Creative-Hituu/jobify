@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="form-container animate__animated animate__fadeIn" style="max-width: 500px; width: 100%; padding: 20px;">
+        <h3 class="text-center mb-3">Apply for "{{ job.title }}"</h3>
+        <form method="POST" style="margin-bottom: 0;">
+            <div class="mb-2">
+                <label for="name" class="form-label mb-1">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-2">
+                <label for="email" class="form-label mb-1">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="resume" class="form-label mb-1">Resume (Link or Short Summary)</label>
+                <textarea class="form-control" id="resume" name="resume" rows="2" placeholder="Provide resume link or brief details"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

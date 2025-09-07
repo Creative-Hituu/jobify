@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2 class="text-center mb-4 animate__animated animate__fadeInDown">Available Jobs</h2>
+
+<!-- Search & Filter Form -->
+<form method="get" action="{{ url_for('view_jobs') }}" class="row g-3 mb-4 animate__animated animate__fadeIn">
+    <div class="col-md-4">
+        <input type="text" name="search" value="{{ search_query }}" class="form-control" placeholder="Search by title or description">
+    </div>
+    <div class="col-md-3">
+        <input type="text" name="location" value="{{ location_filter }}" class="form-control" placeholder="Filter by location">
+    </div>
+    <div class="col-md-3">
+        <input type="text" name="company" value="{{ company_filter }}" class="form-control" placeholder="Filter by company">
+    </div>
+    <div class="col-md-2">
+        <button type="submit" class="btn btn-primary w-100">Search</button>
+    </div>
+</form>
+
+<!-- Job Cards -->
+<div class="row">
+    {% for job in jobs %}
+        <div class="col-md-4 mb-4 animate__animated animate__fadeInUp">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title">{{ job.title }}</h5>
+                    <p class="card-text text-muted">{{ job.company }} — {{ job.location }}</p>
+                    <p class="card-text">{{ job.description[:100] }}...</p>
+                    <p><strong>Salary:</strong> {{ job.salary if job.salary else "Not specified" }}</p>
+                    <a href="{{ url_for('apply_job', job_id=job.id) }}" class="btn btn-success btn-sm">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <p class="text-center">No jobs found matching your criteria.</p>
+    {% endfor %}
+</div>
+{% endblock %}

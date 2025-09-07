@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="form-container animate__animated animate__fadeIn" style="max-width: 500px; width: 100%; padding: 20px;">
+        <h3 class="text-center mb-3">Post a New Job</h3>
+        <form method="POST" style="margin-bottom: 0;">
+            <div class="mb-2">
+                <label for="title" class="form-label mb-1">Job Title</label>
+                <input type="text" class="form-control" id="title" name="title" placeholder="Enter job title" required>
+            </div>
+            <div class="mb-2">
+                <label for="description" class="form-label mb-1">Description</label>
+                <textarea class="form-control" id="description" name="description" rows="2" placeholder="Enter job description" required></textarea>
+            </div>
+            <div class="mb-2">
+                <label for="salary" class="form-label mb-1">Salary</label>
+                <input type="text" class="form-control" id="salary" name="salary" placeholder="Enter salary (optional)">
+            </div>
+            <div class="mb-2">
+                <label for="location" class="form-label mb-1">Location</label>
+                <input type="text" class="form-control" id="location" name="location" placeholder="Enter job location">
+            </div>
+            <div class="mb-3">
+                <label for="company" class="form-label mb-1">Company</label>
+                <input type="text" class="form-control" id="company" name="company" placeholder="Enter company name">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Post Job</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
