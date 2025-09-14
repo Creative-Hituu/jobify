@@ -42,3 +42,11 @@ This project demonstrates full-stack development with **Python backend + HTML/CS
 ⚠️ Note:<br>
 Make sure you have Python 3.8+ and pip installed before running this project.<br><br>
 
+## 📬 Contact  
+
+👤 **Hitanshu Prajapati**  
+📧 Email: hitanshubro1@gmail.com  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/HitanshuPrajapati/hi)  
+💻 [GitHub Profile](https://github.com/Creative-Hituu)  
+
+
