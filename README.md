@@ -46,7 +46,7 @@ Make sure you have Python 3.8+ and pip installed before running this project.<br
 
 👤 **Hitanshu Prajapati**  
 📧 Email: hitanshubro1@gmail.com  
-🔗 [LinkedIn Profile](https://www.linkedin.com/in/HitanshuPrajapati/hi)  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/hitanshu-prajapati-hi)  
 💻 [GitHub Profile](https://github.com/Creative-Hituu)  
 
 
