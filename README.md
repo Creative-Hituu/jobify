@@ -1,7 +1,7 @@
 # 💼 Jobify – Job Portal Web Application  
 
 --> A professional **Job Portal web application** built with **Flask (Python)** where users can create accounts, post jobs, and apply for opportunities.<br>
---> This project demonstrates full-stack development with **Python backend + HTML/CSS templates frontend**.  
+--> This project demonstrates full-stack development with **Python backend + HTML/CSS templates frontend**. 
 
 ---
 
